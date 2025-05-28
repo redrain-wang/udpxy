@@ -35,7 +35,7 @@
 extern FILE*                 g_flog;
 extern struct udpxy_opt      g_uopt;
 
-extern sig_atomic_t must_quit();
+extern sig_atomic_t must_quit(void);
 extern void         wait_terminated  (struct server_ctx* ctx);
 extern void         tmout_requests   (tmfd_t* asock, size_t *alen);
 extern void         process_requests (tmfd_t* asock, size_t *alen,
