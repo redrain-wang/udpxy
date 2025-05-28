@@ -103,7 +103,7 @@ handle_quitsigs(int signo)
 /* return 1 if the application must gracefully quit
  */
 static sig_atomic_t
-must_quit(void) { return g_quit; }
+must_quit() { return g_quit; }
 
 
 static void
@@ -319,7 +319,7 @@ subscribe( int* sockfd, struct in_addr* mcast_inaddr, struct sockaddr_in* s_addr
 /* record network stream as per spec in opt
  */
 static int
-record(void)
+record()
 {
     int rsock = -1, destfd = -1, rc = 0, wtime_sec = 0;
     struct in_addr raddr;
@@ -488,7 +488,7 @@ record(void)
 /* make sure the channel is valid: subscribe/close
  */
 static int
-verify_channel(void)
+verify_channel()
 {
     struct in_addr mcast_inaddr;
     struct sockaddr_in saddr;
@@ -542,7 +542,7 @@ verify_channel(void)
 /* set up signal handling
  */
 static int
-setup_signals(void)
+setup_signals()
 {
     struct sigaction qact, oldact;
 

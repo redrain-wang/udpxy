@@ -115,7 +115,7 @@ handle_quitsigs(int signo)
 
 /* return 1 if the application must gracefully quit
  */
-sig_atomic_t must_quit(void) { return g_quit; }
+sig_atomic_t must_quit() { return g_quit; }
 
 
 /* handle SIGCHLD

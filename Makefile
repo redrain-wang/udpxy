@@ -81,7 +81,7 @@ UDPXY_MANPAGE_EN := doc/en/$(UDPXY_MAN1)
 UDPXREC_MANPAGE_EN := doc/en/$(UDPXREC_MAN1)
 # UDPXYREC_MANPAGE_RU := doc/ru/$(UDPXREC_MAN1)
 
-MANPAGE_DIR := $(INSTALLROOT)/share/man/man1
+MANPAGE_DIR := $(DESTDIR)/usr/share/man/man1
 
 DOCDIR := doc
 DOCFILES := *.txt $(DOCDIR)
